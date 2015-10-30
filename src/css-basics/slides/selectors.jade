@@ -1,0 +1,84 @@
+section
+    section
+        h1 Selectors
+    section
+        h2 Selectors
+        h3 Matching Selectors
+        pre
+            code.css.
+                #parent .element div span {
+                    color: #bada55;
+                }
+    section
+        h2 Selectors
+        h3 Selector Specificity
+        ol
+            li !important
+            li inline styling
+            li ID selector
+            li Class / Pseudo Class / Attribute selector
+            li Element / Pseudo Element selector
+
+    section
+        h2 Selectors
+        h3 Selector Specificity
+        .column
+            pre
+                code.css.
+                    .example {
+                        color: #f00;
+                    }
+            br
+            table
+                tr
+                    th 1
+                    th 2
+                    th 3
+                    th 4
+                    th 5
+                tr
+                    td 0
+                    td 0
+                    td 0
+                    td 1
+                    td 0
+        .column
+            pre
+                code.css.
+                    #example {
+                        color: #f00;
+                    }
+            br
+            table
+                tr
+                    th 1
+                    th 2
+                    th 3
+                    th 4
+                    th 5
+                tr
+                    td 0
+                    td 0
+                    td 1
+                    td 0
+                    td 0
+        .column
+            pre
+                code.css.
+                    #example.example {
+                        color: #f00;
+                    }
+            br
+            table
+                tr
+                    th 1
+                    th 2
+                    th 3
+                    th 4
+                    th 5
+                tr
+                    td 0
+                    td 0
+                    td 1
+                    td 1
+                    td 0

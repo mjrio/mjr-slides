@@ -1,0 +1,29 @@
+doctype html
+html
+    head
+        block title
+            title MJR Presentation
+        //- STYLESHEETS
+        link(href='https://fonts.googleapis.com/css?family=Varela+Round|Pacifico' rel='stylesheet')
+        // build:css styles.css
+        link(rel="stylesheet" href="../../bower_components/reveal.js/css/reveal.css")
+        link(rel="stylesheet" href="../../bower_components/highlightjs/styles/github-gist.css")
+        link(rel="stylesheet" href="../styles/app.css")
+        // endbuild
+    body
+        div.reveal
+            div.slides
+                block content
+
+        // build:js app.js
+        // bower:js
+        // endbower
+        script(src="../../bower_components/reveal.js/js/reveal.js")
+        script.
+            Reveal.initialize({
+                history: true,
+                controls: false,
+                slideNumber: true
+            });
+            hljs.initHighlightingOnLoad();
+        // endbuild
