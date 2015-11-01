@@ -1,0 +1,517 @@
+section
+    section
+        h1 Selectors
+
+    section
+        h2 Selectors
+        h3 Matching Selectors
+        pre
+            code.css.
+                #parent .element div span {
+                    color: #bada55;
+                }
+    section
+        h2 Selectors
+        h3 Selector Specificity
+        ol
+            li !important
+            li inline styling
+            li ID selector
+            li Class / Pseudo Class / Attribute selector
+            li Element / Pseudo Element selector
+
+    section
+        h2 Selectors
+        h3 Selector Specificity
+        .column
+            pre
+                code.css.
+                    .example {
+                        color: #f00;
+                    }
+            br
+            table
+                tr
+                    th 1
+                    th 2
+                    th 3
+                    th 4
+                    th 5
+                tr
+                    td 0
+                    td 0
+                    td 0
+                    td 1
+                    td 0
+        .column
+            pre
+                code.css.
+                    #example {
+                        color: #f00;
+                    }
+            br
+            table
+                tr
+                    th 1
+                    th 2
+                    th 3
+                    th 4
+                    th 5
+                tr
+                    td 0
+                    td 0
+                    td 1
+                    td 0
+                    td 0
+        .column
+            pre
+                code.css.
+                    #example.example {
+                        color: #f00;
+                    }
+            br
+            table
+                tr
+                    th 1
+                    th 2
+                    th 3
+                    th 4
+                    th 5
+                tr
+                    td 0
+                    td 0
+                    td 1
+                    td 1
+                    td 0
+
+    section
+        h2 Selectors
+        h3 Selector Types: Element Selector
+        pre
+            code.html.
+                &lt;p&gt;Example&lt;/p&gt;
+            br
+            code.css.
+                p {
+                    background-color: #bada55;
+                }
+
+    section
+        h2 Selectors
+        h3 Selector Types: Pseudo Element Selectors
+        ul
+            li use double semicolons ::
+            li not a DOM element
+
+    section
+        h2 Selectors
+        h3 Selector Types: Pseudo Element Selectors
+        h4 ::after
+        br
+        pre
+            code.html.
+                &lt;p&gt;Hello, &lt;/p&gt;
+            br
+            code.css.
+                p::after {
+                    content: 'world!';
+                    font-weight: bold;
+                }
+
+    section
+        h2 Selectors
+        h3 Selector Types: Pseudo Element Selectors
+        h4 ::before
+        br
+        pre
+            code.html.
+                &lt;p&gt;world&lt;/p&gt;
+            br
+            code.css.
+                p::before {
+                    content: 'Hello, ';
+                    font-weight: bold;
+                }
+
+    section
+        h2 Selectors
+        h3 Selector Types: Pseudo Element Selectors
+        h4 ::first-letter
+        br
+        pre
+            code.html.
+                &lt;p&gt;Hello, world&lt;/p&gt;
+            br
+            code.css.
+                p::first-letter {
+                    font-size: 20px;
+                    font-weight: bold;
+                }
+
+    section
+        h2 Selectors
+        h3 Selector Types: Pseudo Element Selectors
+        h4 ::first-line
+        br
+        pre
+            code.html.
+                &lt;p&gt;Hello,&lt;br/&gt; world&lt;/p&gt;
+            br
+            code.css.
+                p::first-line {
+                    font-size: 20px;
+                    font-weight: bold;
+                }
+
+    section
+        h2 Selectors
+        h3 Selector Types: Pseudo Element Selectors
+        h4 ::selection
+        br
+        pre
+            code.html.
+                &lt;p&gt;Hello, world&lt;/p&gt;
+            br
+            code.css.
+                p::selection {
+                    color: #fff;
+                    background: #bada55;;
+                }
+
+    section
+        h2 Selectors
+        h3 Selector Types: Pseudo Element Selectors
+        h4 ::backdrop
+        br
+        ul
+            li Experimental
+            li
+                a(href="http://demo.agektmr.com/dialog/" target="_blank") Example
+
+    section
+        h2 Selectors
+        h3 Selector Types: ID Selectors
+        pre
+            code.html.
+                &lt;p id="example"&gt;Example&lt/p&gt;
+            br
+            code.css.
+                #example {
+                    background-color: #bada55;
+                }
+
+    section
+        h2 Selectors
+        h3 Selector Types: Class Selectors
+        pre
+            code.html.
+                &lt;p class="example"&gt;Example&lt/p&gt;
+            br
+            code.css.
+                .example {
+                    background-color: #bada55;
+                }
+
+    section
+        h2 Selectors
+        h3 Selector Types: Pseudo Class Selectors
+        ul
+            li use single semicolons :
+            li specify a state
+
+    section
+        h2 Selectors
+        h3 Selector Types: Pseudo Class Selectors
+        h4 Forms
+        br
+        pre
+            code.css.
+                input:checked {
+                    background-color: #bada55;
+                }
+
+                input:enabled {
+                    background-color: #bada55;
+                }
+
+                input:disabled {
+                    background-color: #f5f5f5;
+                }
+
+                input:focus {
+                    background-color: #bada55;
+                }
+
+    section
+        h2 Selectors
+        h3 Selector Types: Pseudo Class Selectors
+        h4 Forms
+        br
+        pre
+            code.css.
+                input:in-range {
+                    background-color: #bada55;
+                }
+
+                input:out-of-range {
+                    background-color: #bada55;
+                }
+
+                input:valid {
+                    background-color: #bada55;
+                }
+
+                input:invalid {
+                    background-color: #bada55;
+                }
+
+    section
+        h2 Selectors
+        h3 Selector Types: Pseudo Class Selectors
+        h4 Forms
+        br
+        pre
+            code.css.
+                input:optional {
+                    background-color: #bada55;
+                }
+
+                input:required {
+                    background-color: #bada55;
+                }
+
+    section
+        h2 Selectors
+        h3 Selector Types: Pseudo Class Selectors
+        h4 Position - :first-child
+        br
+        pre
+            code.html.
+                &lt;div&gt;
+                    &lt;span&gt;Selected&lt;/span&gt;
+                    &lt;span&gt;Not Selected&lt;/span&gt;
+                    &lt;span&gt;Not Selected&lt;/span&gt;
+                    &lt;span&gt;Not Selected&lt;/span&gt;
+                &lt;/div&gt;
+                &lt;div&gt;
+                    &lt;span&gt;Selected&lt;/span&gt;
+                    &lt;span&gt;Not Selected&lt;/span&gt;
+                &lt;/div&gt;
+            br
+            code.css.
+                span:first-child {
+                    background-color: #bada55;
+                }
+
+    section
+        h2 Selectors
+        h3 Selector Types: Pseudo Class Selectors
+        h4 Position - :first-of-type
+        br
+        pre
+            code.html.
+                &lt;div&gt;
+                    &lt;div&gt;Not Selected&lt;/span&gt;
+                    &lt;span&gt;Selected&lt;/span&gt;
+                    &lt;span&gt;Not Selected&lt;/span&gt;
+                    &lt;span&gt;Not Selected&lt;/span&gt;
+                &lt;/div&gt;
+                &lt;div&gt;
+                    &lt;span&gt;Selected&lt;/span&gt;
+                    &lt;span&gt;Not Selected&lt;/span&gt;
+                &lt;/div&gt;
+            br
+            code.css.
+                span:first-of-type {
+                    background-color: #bada55;
+                }
+
+    section
+        h2 Selectors
+        h3 Selector Types: Pseudo Class Selectors
+        h4 Position - :last-child
+        br
+        pre
+            code.html.
+                &lt;div&gt;
+                    &lt;span&gt;Not Selected&lt;/span&gt;
+                    &lt;span&gt;Not Selected&lt;/span&gt;
+                    &lt;span&gt;Not Selected&lt;/span&gt;
+                    &lt;span&gt;Selected&lt;/span&gt;
+                &lt;/div&gt;
+                &lt;div&gt;
+                    &lt;span&gt;Not Selected&lt;/span&gt;
+                    &lt;span&gt;Selected&lt;/span&gt;
+                &lt;/div&gt;
+            br
+            code.css.
+                span:last-child {
+                    background-color: #bada55;
+                }
+
+    section
+        h2 Selectors
+        h3 Selector Types: Pseudo Class Selectors
+        h4 Position - :last-of-type
+        br
+        pre
+            code.html.
+                &lt;div&gt;
+                    &lt;span&gt;Not Selected&lt;/span&gt;
+                    &lt;span&gt;Not Selected&lt;/span&gt;
+                    &lt;span&gt;Selected&lt;/span&gt;
+                    &lt;div&gt;Not Selected&lt;/span&gt;
+                &lt;/div&gt;
+                &lt;div&gt;
+                    &lt;span&gt;Not Selected&lt;/span&gt;
+                    &lt;span&gt;Selected&lt;/span&gt;
+                &lt;/div&gt;
+            br
+            code.css.
+                span:last-of-type {
+                    background-color: #bada55;
+                }
+
+    section
+        h2 Selectors
+        h3 Selector Types: Pseudo Class Selectors
+        h4 Position - :nth-child(n)
+        br
+        pre
+            code.html.
+                &lt;div&gt;
+                    &lt;p&gt;Not Selected&lt;/p&gt;
+                    &lt;p&gt;Selected&lt;/p&gt;
+                    &lt;p&gt;Not Selected&lt;/p&gt;
+                    &lt;p&gt;Selected&lt;/p&gt;
+                &lt;/div&gt;
+            br
+            code.css.
+                p:nth-child(2n) {
+                    color: #bada55;
+                }
+
+    section
+        h2 Selectors
+        h3 Selector Types: Pseudo Class Selectors
+        h4 Position - :nth-last-child(n)
+        br
+        pre
+            code.html.
+                &lt;div&gt;
+                    &lt;p&gt;Selected&lt;/p&gt;
+                    &lt;p&gt;Not Selected&lt;/p&gt;
+                    &lt;p&gt;Selected&lt;/p&gt;
+                    &lt;p&gt;Not Selected&lt;/p&gt;
+                &lt;/div&gt;
+            br
+            code.css.
+                p:nth-last-child(2n) {
+                    color: #bada55;
+                }
+
+    section
+        h2 Selectors
+        h3 Selector Types: Pseudo Class Selectors
+        h4 Position - :nth-of-type(n)
+        br
+        pre
+            code.html.
+                &lt;div&gt;
+                    &lt;p&gt;Not Selected&lt;/p&gt;
+                    &lt;div&gt;Not Selected&lt;/div&gt;
+                    &lt;p&gt;Selected&lt;/p&gt;
+                    &lt;p&gt;Not Selected&lt;/p&gt;
+                    &lt;p&gt;Not Selected&lt;/p&gt;
+                &lt;/div&gt;
+            br
+            code.css.
+                p:nth-of-type(2) {
+                    color: #bada55;
+                }
+
+    section
+        h2 Selectors
+        h3 Selector Types: Pseudo Class Selectors
+        h4 Position - :nth-of-type(n)
+        br
+        pre
+            code.html.
+                &lt;div&gt;
+                    &lt;p&gt;Not Selected&lt;/p&gt;
+                    &lt;p&gt;Not Selected&lt;/p&gt;
+                    &lt;p&gt;Selected&lt;/p&gt;
+                    &lt;div&gt;Not Selected&lt;/div&gt;
+                    &lt;p&gt;Not Selected&lt;/p&gt;
+                &lt;/div&gt;
+            br
+            code.css.
+                p:nth-last-of-type(2) {
+                    color: #bada55;
+                }
+
+    section
+        h2 Selectors
+        h3 Selector Types: Pseudo Class Selectors
+        h4 Position - :only-child
+        br
+        pre
+            code.html.
+                &lt;div&gt;
+                    &lt;p&gt;Selected&lt;p&gt;
+                &lt;/div&gt;
+                &lt;div&gt;
+                    &lt;p&gt;Not Selected&lt;/p&gt;
+                    &lt;div&gt;Not Selected&lt;/div&gt;
+                &lt;/div&gt;
+
+            br
+            code.css.
+                p:only-child {
+                    color: #bada55;
+                }
+
+    section
+        h2 Selectors
+        h3 Selector Types: Pseudo Class Selectors
+        h4 Position - :only-of-type
+        br
+        pre
+            code.html.
+                &lt;div&gt;
+                    &lt;p&gt;Selected&lt;/p&gt;
+                &lt;/div&gt;
+                &lt;div&gt;
+                    &lt;p&gt;Selected&lt;/p&gt;
+                    &lt;div&gt;Not Selected&lt;/div&gt;
+                &lt;/div&gt;
+                &lt;div&gt;
+                    &lt;p&gt;Not Selected&lt;/p&gt;
+                    &lt;p&gt;Not Selected&lt;/p&gt;
+                    &lt;div&gt;Not Selected&lt;/div&gt;
+                &lt;/div&gt;
+
+            br
+            code.css.
+                p:only-of-type {
+                    color: #bada55;
+                }
+
+    section
+        h2 Selectors
+        h3 Selector Types: Pseudo Class Selectors
+        h4 Click State
+        br
+        pre
+            code.css.
+                .button {
+                    background-color: #bada55;
+                }
+
+                .button:hover {
+                    background-color: #caea65;
+                }
+
+                .button:active {
+                    background-color: #aaca45;
+                }
