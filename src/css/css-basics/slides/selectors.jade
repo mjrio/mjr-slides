@@ -515,3 +515,233 @@ section
                 .button:active {
                     background-color: #aaca45;
                 }
+
+    section
+        h2 Selectors
+        h3 Selector Types: Pseudo Class Selectors
+        h4 Other - :empty
+        br
+        pre
+            code.html.
+                &lt;div&gt;&lt;/div&gt;
+                &lt;div&gt;I'm not selected&lt;/div&gt;
+                &lt;div&gt;
+                    &lt;p&gt;
+                        I'm also not selected
+                    &lt;/p&gt;
+                &lt;/div&gt;
+            br
+            code.css.
+                div:empty {
+                    background-color: #bada55;
+                    height: 30px;
+                }
+
+    section
+        h2 Selectors
+        h3 Selector Types: Pseudo Class Selectors
+        h4 Other - :link & :visited
+        br
+        pre
+            code.html.
+                &lt;a href="http://www.euri.com"&gt;A Website&lt;/a&gt;
+            br
+            code.css.
+                a:link {
+                    background-color: rebeccapurple;
+                }
+
+                a:visited {
+                    background-color: hotpink;
+                }
+
+    section
+        h2 Selectors
+        h3 Selector Types: Pseudo Class Selectors
+        h4 Other - :not
+        br
+        pre
+            code.html.
+                &lt;a class="example"&gt;Selected&lt;/a&gt;
+                &lt;p class="example"&gt;Not Selected&lt;/p&gt;
+            br
+            code.css.
+                .example:not(p) {
+                    color: #bada55;
+                }
+
+    section
+        h2 Selectors
+        h3 Selector Types: Pseudo Class Selectors
+        h4 Other - :read-only & read-write
+        br
+        pre
+            code.html.
+                &lt;input readonly/&gt;
+                &lt;input/&gt;
+            br
+            code.css.
+                input:read-only {
+                    background-color: hotpink;
+                }
+
+                input:read-write {
+                    background-color: rebeccapurple;
+                }
+
+    section
+        h2 Selectors
+        h3 Selector Types: Pseudo Class Selectors
+        h4 Other - :root
+        br
+        pre
+            code.html.
+                &lt;html&gt;
+                    &lt;body&gt;
+                        &lt;p&gt;Hello world&lt;/p&gt;
+                    &lt;/body&gt;
+                &lt;/html&gt;
+            br
+            code.css.
+                :root {
+                    background-color: #bada55;
+                }
+
+    section
+        h2 Selectors
+        h3 Selector Types: Pseudo Class Selectors
+        h4 Other - :target
+        br
+        pre
+            code.html.
+                &lt;a href="#article-1"&gt;Click Me&lt;/a&gt;
+                &lt;div id="article-1"&gt;Not Selected&lt;/div&gt;
+                &lt;div id="article-2"&gt;Selected&lt;/div&gt;
+            br
+            code.css.
+                div:target {
+                    background-color: #bada55;
+                }
+
+    section
+        h2 Selectors
+        h3 Selector Types: Attribute Selectors
+        ul
+            li Brackets []
+            li Bad for performance
+
+    section
+        h2 Selectors
+        h3 Selector Types: Attribute Selectors
+        h4 Equals
+        br
+        pre
+            code.html.
+                &lt;div data-attr="example"&gt;&lt;/div&gt;
+            br
+            code.css.
+                [data-attr="example"] {
+                    background-color: #bada55;
+                }
+
+    section
+        h2 Selectors
+        h3 Selector Types: Attribute Selectors
+        h4 Contains
+        br
+        pre
+            code.html.
+                &lt;div data-attr="example"&gt;&lt;/div&gt;
+            br
+            code.css.
+                [data-attr*="am"] {
+                    background-color: #bada55;
+                }
+
+    section
+        h2 Selectors
+        h3 Selector Types: Attribute Selectors
+        h4 Starts with
+        br
+        pre
+            code.html.
+                &lt;div data-attr="example"&gt;&lt;/div&gt;
+            br
+            code.css.
+                [data-attr^="ex"] {
+                    background-color: #bada55;
+                }
+
+    section
+        h2 Selectors
+        h3 Selector Types: Attribute Selectors
+        h4 Ends with
+        br
+        pre
+            code.html.
+                &lt;div data-attr="example"&gt;&lt;/div&gt;
+            br
+            code.css.
+                [data-attr$="ample"] {
+                    background-color: #bada55;
+                }
+
+    section
+        h2 Selectors
+        h3 Selector Types: Attribute Selectors
+        h4 Space separated list
+        br
+        pre
+            code.html.
+                &lt;div data-attr="here is an example of a selector"&gt;&lt;/div&gt;
+            br
+            code.css.
+                [data-attr~="example"] {
+                    background-color: #bada55;
+                }
+
+    section
+        h2 Selectors
+        h3 Selector Types: Attribute Selectors
+        h4 Dash separated list
+        br
+        pre
+            code.html.
+                &lt;div data-attr="the-example-selector"&gt;&lt;/div&gt;
+            br
+            code.css.
+                [data-attr|="example"] {
+                    background-color: #bada55;
+                }
+
+    section
+        h2 Selectors
+        h3 Selector Combinators: children
+        br
+        h4 Descendant Selector
+        br
+        pre
+            code.css .example p
+        br
+        br
+        br
+        h4 Child Selector
+        br
+        pre
+            code.css .example > p
+
+    section
+        h2 Selectors
+        h3 Selector Combinators: siblings
+        br
+        h4 Adjacent Sibling Selector
+        br
+        pre
+            code.css .example + p
+        br
+        br
+        br
+        h4 General Sibling Selector
+        br
+        pre
+            code.css .example ~ p
