@@ -1,0 +1,80 @@
+section
+    section
+        h1 Alignment
+
+    section
+        h2 Alignment
+        h3 Text
+        pre
+            code(contenteditable).css.
+                .foo {
+                    ...
+                    text-align: left | center | right | justify | start | end;
+                }
+        p justify: text will stretch to width of element
+        p start/end: ideal for different languages
+
+    section
+        h2 Alignment
+        h3 Element: Horizontal
+        pre
+            code(contenteditable).css.
+                .bar {
+                    margin-right: auto; /* align left */
+                    margin-right: auto; /* align right */
+                    margin-right: auto; /* align center */
+                    ...
+                    width: 100px;
+                }
+
+    section
+        h2 Alignment
+        h3 Element: Vertical
+        pre
+            code(contenteditable).html.
+                &lt;div class="container"&gt;
+                    &lt;div class="selector"&gt;
+                        I'm vertically Centered
+                    &lt;/div&gt;
+                &lt;/div&gt;
+
+    section
+        h2 Alignment
+        h3 Element: Vertical
+        pre
+            code(contenteditable).css.
+                .container {
+                    height: 500px;
+                }
+
+                .selector {
+                    position: relative;
+                    top: 50%;
+                    transform: translateY(-50%);
+                }
+
+    section
+        h2 Alignment
+        h3 Element: Vertical
+        pre
+            code(contenteditable).css.
+                .container {
+                    display: table;
+                    height: 500px;
+                }
+
+                .selector {
+                    display: table-cell;
+                    vertical-align: middle;
+                }
+
+    section
+        h2 Alignment
+        h3 Element: Vertical
+        pre
+            code(contenteditable).css.
+                .container {
+                    align-items: center;
+                    display: flex;
+                    height: 500px;
+                }

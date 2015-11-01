@@ -1,0 +1,41 @@
+section
+    section
+        h1 Render Tree
+
+    section
+        h2 Render Tree
+        p Combination of DOM tree and CSSOM tree.
+        p.fragment Result is painted on the screen
+
+    section
+        h2 Render Tree
+        h3 Constructing the tree
+
+        p Starting from root
+        p.fragment Only visible nodes
+        p.fragment Applies styling from CSSOM
+
+    section
+        h2 Render Tree
+        h3 Layout stage
+
+        p Starting from root
+        p.fragment Calculate position
+        p.fragment Convert units to absolute
+        p.fragment Creates box-model
+
+    section
+        h2 Render Tree
+        h3 Painting or Rasterizing
+
+        p Visible elements
+        p.fragment Applied styles
+        p.fragment Paints the actual pixels
+
+    section
+        h2 Render Tree
+        h3 Conclusion
+
+        p Takes time
+        p.fragment When DOM or CSSOM updated, repeat
+

@@ -1,0 +1,34 @@
+section
+    section
+        h1 Render Blocking CSS
+
+    section
+        h2 Render Blocking CSS
+        p Browsers will not display the page until it has loaded the stylesheets
+        p.fragment Limit CSS
+
+    section
+        h2 Render Blocking CSS
+        h3 Lazy Loading
+        p Not only JavaScript but also CSS
+        p.fragment Initial CSSOM is smaller
+        p.fragment Repaint
+        p.fragment Flash Of Unstyled Content
+
+    section
+        h2 Render Blocking CSS
+        h3 Media Queries
+
+        pre
+            code.html.
+                    &lt;link href="stylesheet.css" rel="stylesheet"/&gt;
+                    &lt;link href="print.css" media="print" rel="stylesheet"/&gt;
+                    &lt;link href="other.css" media="(min-width: 40em)" rel="stylesheet" &gt;
+
+    section
+        h2 Render Blocking CSS
+        h3 Media Queries
+        p only blocking when querie is matched
+        p.fragment If not matched, still loaded
+        p.fragment Preferably HTML media queries
+

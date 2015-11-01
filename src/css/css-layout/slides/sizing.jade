@@ -1,0 +1,193 @@
+section
+    section
+        h1 Sizing
+
+    section
+        h2 Sizing
+        h3 Box sizing
+        pre
+            code(contenteditable).css.
+                .element {
+                    border: solid 5px #bada55;
+                    padding: 10px;
+                    width: 200px;
+                }
+        p Calculated width 230px
+
+    section
+        h2 Sizing
+        h3 Box sizing
+        pre
+            code(contenteditable).css.
+                .element {
+                    border: solid 5px #bada55;
+                    box-sizing: border-box; /* The magic */
+                    padding: 10px;
+                    width: 200px;
+                }
+        p Calculated width 100% - 30px
+
+    section
+        h2 Sizing
+        h3 Display: inline
+        p Behaves as text
+        p Margin and padding only horizontal
+        br
+        br
+        br
+        pre
+            code(contenteditable).css.
+                .foo {
+                    ...
+                    display: inline;
+                    ...
+                }
+
+    section
+        h2 Sizing
+        h3 Display: inline-block
+        p Follows baseline
+        p Margin and padding both ways
+        br
+        br
+        br
+        pre
+            code(contenteditable).css.
+                .bar {
+                    ...
+                    display: inline-block;
+                    ...
+                }
+
+    section
+        h2 Sizing
+        h3 Display: block
+        p Breaks the flow
+        p Takes up all horizontal space
+        br
+        br
+        br
+        pre
+            code(contenteditable).css.
+                .baz {
+                    ...
+                    display: block;
+                    ...
+                }
+
+    section
+        h2 Sizing
+        h3 Display: table
+        pre
+            code(contenteditable).html.
+                &lt;div class="table"&gt;
+                    &lt;div class="row"&gt;
+                        &lt;div class="cell"&gt;First cell&lt;/div&gt;
+                        ...
+                    &lt;/div&gt;
+                &lt;/div&gt;
+        pre
+            code(contenteditable).css.
+                .table {
+                    display: table;
+                }
+
+                .row {
+                    display: table-row;
+                }
+
+                .cell {
+                    display: table-cell;
+                }
+
+    section
+        h2 Sizing
+        h3 Display: table
+        p table-row: no padding or margin
+        p.fragment table-cell: no margin
+        p.fragment table: default wrap araound content
+
+    section
+        h2 Sizing
+        h3 Table layout
+        pre
+            code(contenteditable).css.
+                .table {
+                    display: table;
+                    table-layout: fixed;
+                }
+        p Forces equal width on cells
+
+    section
+        h2 Sizing
+        h3 Border collapse
+        pre
+            code(contenteditable).css.
+                .table {
+                    border-collapse: separate | collapse;
+                    display: table;
+                }
+
+                .table-cell {
+                    display: table-cell;
+                    border: solid 1px #bada55;
+                }
+        p Adjacent cells join borders.
+
+    section
+        h2 Sizing
+        h3 Vertical align
+        pre
+            code(contenteditable).css.
+                .table-cell {
+                    display: table-cell;
+                    vertical-align: middle;
+                }
+
+    section
+        h2 Sizing
+        h3 Margin
+        pre
+            code(contenteditable).css.
+                .foo {
+                    margin: 10px;
+                    /* margin: top right bottom left; */
+                }
+        p Adds spacing around the element
+
+    section
+        h2 Sizing
+        h3 Padding
+        pre
+            code(contenteditable).css.
+                .bar {
+                    padding: 10px;
+                    /* padding: top right bottom left; */
+                }
+        p Adds spacing inside the element
+
+    section
+        h2 Sizing
+        h3 Width
+        pre
+            code(contenteditable).css.
+                .foo {
+                    max-width: 900px;
+                    min-width: 300px;
+                    width: 90%;
+                }
+
+    section
+        h2 Sizing
+        h3 Height
+        pre
+            code(contenteditable).css.
+                .bar {
+                    height: 100%;
+                    background-color: #bada55;
+                }
+        pre.fragment
+            code(contenteditable).css.
+                html, body {
+                    height: 100%;
+                }

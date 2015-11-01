@@ -1,0 +1,14 @@
+extends ../../shared/_layout
+
+block variables
+    - var relativePathToRoot = '../../';
+
+block title
+    title MJR - CSS Deep Dive
+
+block content
+    include slides/title
+    include slides/content
+    include slides/cssom
+    include slides/render-tree
+    include slides/render-blocking
