@@ -1,0 +1,159 @@
+section
+    section
+        h1 Preprocessors
+
+    section
+        h2 Preprocessors
+        h3 Available Preprocessors
+        ul
+            li Sass
+            li Less
+            li Stylus
+            li Compass
+            li ...
+
+    section
+        h2 Preprocessors
+        h3 Compilation
+        ul
+            li grunt-sass
+            li gulp-sass
+            li sass-loader
+
+    section
+        h2 Preprocessors
+        h3 Linting
+        ul
+            li Keeps your code clean
+            li
+                a(target="_blank" href="https://github.com/brigade/scss-lint") https://github.com/brigade/scss-lint
+
+    section
+        h2 Preprocessors
+        h3 Sass
+        h4 Variables
+        br
+        pre
+            code.css.
+                $some-color: #333;
+                $some-font: Arial, sans-serif;
+                $some-length: 20px;
+
+                .example {
+                    color: $some-color;
+                    font-family: $some-font;
+                    font-size: $some-length;
+                }
+
+    section
+        h2 Preprocessors
+        h3 Sass
+        h4 Nesting
+        br
+        pre
+            code.css.
+                .example {
+                    ...
+                }
+
+                .example .nested {
+                    ...
+                }
+
+                .example {
+                    ...
+
+                    .nested {
+                        ...
+                    }
+                }
+
+    section
+        h2 Preprocessors
+        h3 Sass
+        h4 Importing
+        br
+        ul
+            li @import 'somePathToFile';
+            li Small blocks
+
+    section
+        h2 Preprocessors
+        h3 Sass
+        h4 Looping
+        br
+        pre
+            code.
+                @for $i from 1 through 3 {
+                    .item-&#35;{$i}{
+                        width: 100px * $i;
+                    }
+                }
+
+    section
+        h2 Preprocessors
+        h3 Sass
+        h4 Mixins
+        br
+        pre
+            code.
+                @mixin link {
+                  color: hotpink;
+                  text-decoration: underline;
+                }
+
+                a {
+                  @include link;
+                }
+
+                button {
+                  @include link;
+                  border: solid thin hotpink;
+                  padding: 10px;
+                  margin: 10px;
+                }
+
+    section
+        h2 Preprocessors
+        h3 Sass
+        h4 Extends
+        br
+        pre
+            code.
+                .btn {
+                  background-color: hotpink;
+                  border: solid thin;
+                  padding: 10px;
+                }
+
+                .btn-primary {
+                  @extend .btn;
+                  background-color: rebeccapurple;
+                }
+
+    section
+        h2 Preprocessors
+        h3 Sass
+        h4 Placeholder Selectors
+        br
+        pre
+            code.
+                %btn {
+                  border: solid thin;
+                  padding: 10px;
+                }
+
+                .btn-primary {
+                  @extend %btn;
+                  background-color: rebeccapurple;
+                }
+
+                .btn-secondary {
+                  @extend %btn;
+                  background-color: hotpink;
+                }
+
+    section
+        h2 Preprocessors
+        h3 Sass
+        a(href="https://scotch.io/courses/aesthetic-sass-the-best-practices-in-sass" target="_blank") Best practises in Sass
