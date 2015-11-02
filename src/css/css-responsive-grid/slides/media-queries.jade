@@ -1,0 +1,69 @@
+section
+    section
+        h1 Media Queries
+
+    section
+        h2 Media Queries
+        h3 Queries
+
+        p Media Types
+        p Media Features
+
+    section
+        h2 Media Queries
+        h3 Media Types
+
+        p all
+        p screen
+        p print
+        p speech
+
+    section
+        h2 Media Queries
+        h3 Media Types
+        
+        p height [min-/max-/device-]
+        p width [min-/max-/device-]
+        p orientation
+        p speech
+        br
+        p can be combined
+
+    section
+        h2 Media Queries
+        h3 @media
+
+        pre
+            code.css.
+                .example {
+                    background-color: hotpink;
+                }
+
+                @media screen and (min-width: 760px) {
+                    .example {
+                        background-color: #bada55;
+                    }
+                }
+
+    section
+        h2 Media Queries
+        h3 Attribute
+
+        pre
+            code.html.
+                &lt;html&gt;
+                    &lt;head&gt;
+                        &lt;link rel="stylesheet" href="style.css"/&gt;
+                        &lt;link rel="stylesheet" href="style-small.css" 
+                            media="screen and (max-width: 760px)"/&gt;
+                    &lt;/head&gt;
+                    &lt;body&gt;
+                        &lt;div class="example"&gt;Resize me please!&lt;/div&gt;
+                    &lt;/body&gt;
+                &lt;/html&gt;
+
+    section
+        h2 Media Queries
+        h3 Responsive vs Adaptive
+
+        a(href="http://www.liquidapsive.com/", target="_blank") http://www.liquidapsive.com/
