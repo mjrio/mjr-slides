@@ -8,7 +8,7 @@ html
             title MJR Presentation
         //- STYLESHEETS
         link(rel="stylesheet" href="https://fonts.googleapis.com/css?family=Varela+Round|Pacifico")
-        // build:css styles.css
+        // build:css ../styles/app.css
         link(rel="stylesheet" href="../#{relativePathToRoot}bower_components/reveal.js/css/reveal.css")
         link(rel="stylesheet" href="../#{relativePathToRoot}bower_components/highlightjs/styles/github-gist.css")
         link(rel="stylesheet" href="#{relativePathToRoot}styles/app.css")
@@ -18,7 +18,7 @@ html
             div.slides
                 block content
 
-        // build:js app.js
+        // build:js ../scripts/app.js
         // bower:js
         // endbower
         script(src="../#{relativePathToRoot}bower_components/reveal.js/js/reveal.js")

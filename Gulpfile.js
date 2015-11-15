@@ -153,8 +153,8 @@ gulp.task('deploy', ['build'], function () {
     });
 
     return gulp.src(paths.dest + '/**/*.*')
-        .pipe(conn.newer('/domains/mjr.io/public_html'))
-        .pipe(conn.dest('/domains/mjr.io/public_html'))
+        .pipe(conn.newer('/domains/mjr.io/public_html/slides'))
+        .pipe(conn.dest('/domains/mjr.io/public_html/slides'))
 });
 
 // Default Task
