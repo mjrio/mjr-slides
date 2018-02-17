@@ -14,39 +14,41 @@ section
         h2 Introduction
         h3 The C stands for cascading
         pre
-            code.css.
-                .example {
+            code(contenteditable="true").css.
+                .foo {
                     color: #f00;
                 }
 
-                .cascade {
+                .bar {
                     color: #00f;
                 }
+
         pre
             code.html.
-                &lt;p class="example"&gt;
+                &lt;p class="foo"&gt;
                     My Color is #f00
                 &lt;/p&gt;
 
-                &lt;p class="example cascade"&gt;
+                &lt;p class="foo bar"&gt;
                     My color is #00f
                 &lt;/p&gt;
+
     section
         h2 Introduction
         h3 Inheritance
         pre
             code.css.
-                .example {
+                .foo {
                     color: #f00;
                 }
 
-                .inherit {
+                .bar {
                     text-decoration: underline;
                 }
         pre
             code.html.
-                &lt;p class="example"&gt;
-                    &lt;p class="inherit"&gt;
-                        My color is #f00 and i'm underlined
+                &lt;p class="foo"&gt;
+                    &lt;p class="bar"&gt;
+                        My color is #f00 and I'm underlined
                     &lt;/p&gt;
                 &lt;/p&gt;

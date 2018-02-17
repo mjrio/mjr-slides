@@ -1,5 +1,5 @@
 section
-    section
+    section(data-background-color="hotpink")
         h1 Selectors
 
     section
@@ -7,7 +7,7 @@ section
         h3 Matching Selectors
         pre
             code.css.
-                #parent .element div span {
+                #foo .bar div span {
                     color: #bada55;
                 }
     section
@@ -26,7 +26,7 @@ section
         .column
             pre
                 code.css.
-                    .example {
+                    .foo {
                         color: #f00;
                     }
             br
@@ -43,10 +43,13 @@ section
                     td 0
                     td 1
                     td 0
+    section
+        h2 Selectors
+        h3 Selector Specificity
         .column
             pre
                 code.css.
-                    #example {
+                    #foo {
                         color: #f00;
                     }
             br
@@ -63,10 +66,13 @@ section
                     td 1
                     td 0
                     td 0
+    section
+        h2 Selectors
+        h3 Selector Specificity
         .column
             pre
                 code.css.
-                    #example.example {
+                    #foo.bar {
                         color: #f00;
                     }
             br
@@ -175,7 +181,7 @@ section
             code.css.
                 p::selection {
                     color: #fff;
-                    background: #bada55;;
+                    background-color: #bada55;
                 }
 
     section
@@ -193,11 +199,11 @@ section
         h3 Selector Types: ID Selectors
         pre
             code.html.
-                &lt;p id="example"&gt;Example&lt/p&gt;
+                &lt;p id="foo"&gt;Example&lt/p&gt;
             br
             code.css.
-                #example {
-                    background-color: #bada55;
+                #foo {
+                    background-color: hotpink;
                 }
 
     section
@@ -205,11 +211,11 @@ section
         h3 Selector Types: Class Selectors
         pre
             code.html.
-                &lt;p class="example"&gt;Example&lt/p&gt;
+                &lt;p class="foo"&gt;Example&lt/p&gt;
             br
             code.css.
-                .example {
-                    background-color: #bada55;
+                .foo {
+                    background-color: hotpink;
                 }
 
     section
@@ -227,19 +233,19 @@ section
         pre
             code.css.
                 input:checked {
-                    background-color: #bada55;
+                    background-color: hotpink;
                 }
 
                 input:enabled {
-                    background-color: #bada55;
+                    background-color: hotpink;
                 }
 
                 input:disabled {
-                    background-color: #f5f5f5;
-                }
+                    background-color: grey;
+                }p
 
                 input:focus {
-                    background-color: #bada55;
+                    background-color: hotpink;
                 }
 
     section
@@ -250,19 +256,19 @@ section
         pre
             code.css.
                 input:in-range {
-                    background-color: #bada55;
+                    background-color: green;
                 }
 
                 input:out-of-range {
-                    background-color: #bada55;
+                    background-color: red;
                 }
 
                 input:valid {
-                    background-color: #bada55;
+                    background-color: green;
                 }
 
                 input:invalid {
-                    background-color: #bada55;
+                    background-color: red;
                 }
 
     section
@@ -273,11 +279,11 @@ section
         pre
             code.css.
                 input:optional {
-                    background-color: #bada55;
+                    background-color: purple;
                 }
 
                 input:required {
-                    background-color: #bada55;
+                    background-color: blue;
                 }
 
     section
@@ -300,7 +306,7 @@ section
             br
             code.css.
                 span:first-child {
-                    background-color: #bada55;
+                    background-color: hotpink;
                 }
 
     section
@@ -323,7 +329,7 @@ section
             br
             code.css.
                 span:first-of-type {
-                    background-color: #bada55;
+                    background-color: hotpink;
                 }
 
     section
@@ -346,7 +352,7 @@ section
             br
             code.css.
                 span:last-child {
-                    background-color: #bada55;
+                    background-color: hotpink;
                 }
 
     section
@@ -369,7 +375,7 @@ section
             br
             code.css.
                 span:last-of-type {
-                    background-color: #bada55;
+                    background-color: hotpink;
                 }
 
     section
@@ -388,7 +394,7 @@ section
             br
             code.css.
                 p:nth-child(2n) {
-                    color: #bada55;
+                    color: hotpink;
                 }
 
     section
@@ -407,7 +413,7 @@ section
             br
             code.css.
                 p:nth-last-child(2n) {
-                    color: #bada55;
+                    color: hotpink;
                 }
 
     section
@@ -427,7 +433,7 @@ section
             br
             code.css.
                 p:nth-of-type(2) {
-                    color: #bada55;
+                    color: hotpink;
                 }
 
     section
@@ -447,7 +453,7 @@ section
             br
             code.css.
                 p:nth-last-of-type(2) {
-                    color: #bada55;
+                    color: hotpink;
                 }
 
     section
@@ -468,7 +474,7 @@ section
             br
             code.css.
                 p:only-child {
-                    color: #bada55;
+                    color: hotpink;
                 }
 
     section
@@ -494,7 +500,7 @@ section
             br
             code.css.
                 p:only-of-type {
-                    color: #bada55;
+                    color: hotpink;
                 }
 
     section
@@ -505,15 +511,15 @@ section
         pre
             code.css.
                 .button {
-                    background-color: #bada55;
+                    background-color: hotpink;
                 }
 
                 .button:hover {
-                    background-color: #caea65;
+                    background-color: purple;
                 }
 
                 .button:active {
-                    background-color: #aaca45;
+                    background-color: cyan;
                 }
 
     section
@@ -533,7 +539,7 @@ section
             br
             code.css.
                 div:empty {
-                    background-color: #bada55;
+                    background-color: hotpink;
                     height: 30px;
                 }
 
@@ -567,7 +573,7 @@ section
             br
             code.css.
                 .example:not(p) {
-                    color: #bada55;
+                    color: hotpink;
                 }
 
     section
@@ -604,7 +610,7 @@ section
             br
             code.css.
                 :root {
-                    background-color: #bada55;
+                    background-color: hotpink;
                 }
 
     section
@@ -620,7 +626,7 @@ section
             br
             code.css.
                 div:target {
-                    background-color: #bada55;
+                    background-color: hotpink;
                 }
 
     section
@@ -637,11 +643,11 @@ section
         br
         pre
             code.html.
-                &lt;div data-attr="example"&gt;&lt;/div&gt;
+                &lt;div data-attr="foo"&gt;&lt;/div&gt;
             br
             code.css.
-                [data-attr="example"] {
-                    background-color: #bada55;
+                [data-attr="foo"] {
+                    background-color: hotpink;
                 }
 
     section
@@ -651,11 +657,11 @@ section
         br
         pre
             code.html.
-                &lt;div data-attr="example"&gt;&lt;/div&gt;
+                &lt;div data-attr="foo"&gt;&lt;/div&gt;
             br
             code.css.
-                [data-attr*="am"] {
-                    background-color: #bada55;
+                [data-attr*="oo"] {
+                    background-color: hotpink;
                 }
 
     section
@@ -665,11 +671,11 @@ section
         br
         pre
             code.html.
-                &lt;div data-attr="example"&gt;&lt;/div&gt;
+                &lt;div data-attr="foo"&gt;&lt;/div&gt;
             br
             code.css.
-                [data-attr^="ex"] {
-                    background-color: #bada55;
+                [data-attr^="fo"] {
+                    background-color: hotpink;
                 }
 
     section
@@ -679,11 +685,11 @@ section
         br
         pre
             code.html.
-                &lt;div data-attr="example"&gt;&lt;/div&gt;
+                &lt;div data-attr="foo"&gt;&lt;/div&gt;
             br
             code.css.
-                [data-attr$="ample"] {
-                    background-color: #bada55;
+                [data-attr$="oo"] {
+                    background-color: hotpink;
                 }
 
     section
@@ -697,7 +703,7 @@ section
             br
             code.css.
                 [data-attr~="example"] {
-                    background-color: #bada55;
+                    background-color: hotpink;
                 }
 
     section
@@ -711,7 +717,7 @@ section
             br
             code.css.
                 [data-attr|="example"] {
-                    background-color: #bada55;
+                    background-color: hotpink;
                 }
 
     section
@@ -721,14 +727,14 @@ section
         h4 Descendant Selector
         br
         pre
-            code.css .example p
+            code.css .foo .bar
         br
         br
         br
         h4 Child Selector
         br
         pre
-            code.css .example > p
+            code.css .foo > .bar
 
     section
         h2 Selectors
@@ -737,11 +743,11 @@ section
         h4 Adjacent Sibling Selector
         br
         pre
-            code.css .example + p
+            code.css .foo + .bar
         br
         br
         br
         h4 General Sibling Selector
         br
         pre
-            code.css .example ~ p
+            code.css .foo ~ .bar
